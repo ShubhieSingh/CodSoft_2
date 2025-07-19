@@ -25,12 +25,12 @@
 <div align="center">
 
 ### 🖥️ Main Interface
-![Calculator Main Interface](screenshots/calculator-main.png)
+![Calculator Main Interface](https://github.com/ShubhieSingh/CodSoft_2/blob/eb22c6752602edf15d14f75985a0799dc3220eea/screenshots/Screenshot%202025-07-19%20232430.png)
 
 > *The main calculator interface with modern dark theme and intuitive button layout*
 
 ### ⚡ Mathematical Operations in Action
-![Calculator Operations](screenshots/calculator-operations.png)
+![Calculator Operations](https://github.com/ShubhieSingh/CodSoft_2/blob/eb22c6752602edf15d14f75985a0799dc3220eea/screenshots/Screenshot%202025-07-19%20232454.png)
 
 > *Real-time expression display and comprehensive mathematical operations*
 
