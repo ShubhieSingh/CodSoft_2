@@ -1,198 +1,424 @@
 # 🧮 Calculator GUI
 
-A modern, feature-rich calculator application built with Python and CustomTkinter, offering a sleek dark theme interface with comprehensive mathematical operations.
+<div align="center">
+
+[![GitHub repo](https://img.shields.io/badge/GitHub-CodSoft__2-blue?style=for-the-badge&logo=github)](https://github.com/ShubhieSingh/CodSoft_2)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![CustomTkinter](https://img.shields.io/badge/CustomTkinter-5.0+-green?style=for-the-badge&logo=tkinter)](https://github.com/TomSchimansky/CustomTkinter)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
+**A modern, feature-rich calculator application built with Python and CustomTkinter**
+
+*Offering a sleek dark theme interface with comprehensive mathematical operations*
+
+[🚀 Quick Start](#-installation) •
+[📖 Usage Guide](#-usage) •
+[🛠️ Technical Details](#️-technical-details) •
+[🎨 Customization](#-customization)
+
+</div>
+
+---
 
 ## 📸 Screenshots
 
-### Main Interface
-![Calculator Main Interface](screenshots/calculator-main.png)
-*The main calculator interface with dark theme and intuitive button layout*
+<div align="center">
 
-### Mathematical Operations
+### 🖥️ Main Interface
+![Calculator Main Interface](screenshots/calculator-main.png)
+
+> *The main calculator interface with modern dark theme and intuitive button layout*
+
+### ⚡ Mathematical Operations in Action
 ![Calculator Operations](screenshots/calculator-operations.png)
-*Demonstration of various mathematical operations and real-time expression display*
+
+> *Real-time expression display and comprehensive mathematical operations*
+
+</div>
+
+---
 
 ## ✨ Features
 
-### Core Calculator Functions
+<table>
+<tr>
+<td width="50%">
+
+### 🔢 Core Calculator Functions
 - ✅ **Basic Arithmetic**: Addition (+), Subtraction (−), Multiplication (×), Division (÷)
 - ✅ **Advanced Operations**: Square (x²), Square Root (²√x), Reciprocal (¹∕ₓ), Percentage (%)
 - ✅ **Utility Functions**: Plus/Minus toggle (±), Decimal point support
 - ✅ **Clear Operations**: Clear All (C), Clear Entry (CE), Backspace (⌫)
 
-### User Experience
+</td>
+<td width="50%">
+
+### 🎨 User Experience
 - 🎨 **Modern Dark Theme**: Professional appearance with customizable colors
 - 📱 **Responsive Layout**: Optimized button sizing and spacing
 - 🔄 **Real-time Display**: Shows complete expressions during calculations
 - ⚡ **Instant Feedback**: Visual button hover effects and state changes
 - 🛡️ **Error Handling**: Graceful handling of division by zero and invalid operations
 
-### Technical Features
-- 🖥️ **Cross-Platform**: Runs on Windows, macOS, and Linux
-- 🎯 **Precise Calculations**: Handles floating-point arithmetic accurately
-- 🔧 **Extensible Code**: Clean, well-documented Python code structure
-- 📏 **Fixed Window Size**: Consistent UI experience across different systems
+</td>
+</tr>
+</table>
+
+### 🚀 Technical Features
+
+> **Cross-Platform Compatibility** 🖥️ Runs seamlessly on Windows, macOS, and Linux
+
+> **Precise Calculations** 🎯 Handles floating-point arithmetic with high accuracy
+
+> **Extensible Architecture** 🔧 Clean, well-documented Python code structure
+
+> **Consistent UI** 📏 Fixed window size ensures uniform experience across systems
+
+---
 
 ## 🚀 Installation
 
-### Prerequisites
-- Python 3.7 or higher
-- pip package manager
+<details>
+<summary><b>📋 Prerequisites</b></summary>
 
-### Setup Instructions
+- ![Python](https://img.shields.io/badge/Python-3.7+-blue?style=flat-square&logo=python) or higher
+- ![pip](https://img.shields.io/badge/pip-package%20manager-orange?style=flat-square) package manager
 
-1. **Clone or download the repository**
-   ```bash
-   git clone <repository-url>
-   cd calculator-gui
-   ```
+</details>
 
-2. **Install required dependencies**
-   ```bash
-   pip install customtkinter
-   ```
+### ⚡ Quick Setup
 
-3. **Run the application**
-   ```bash
-   python Calculator_GUI.py
-   ```
+<details open>
+<summary><b>🔧 Standard Installation</b></summary>
 
-### Alternative Installation (Virtual Environment)
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/ShubhieSingh/CodSoft_2.git
+cd CodSoft_2
+
+# 2️⃣ Install dependencies
+pip install customtkinter
+
+# 3️⃣ Run the application
+python Calculator_GUI.py
+```
+
+</details>
+
+<details>
+<summary><b>🐍 Virtual Environment Setup (Recommended)</b></summary>
+
 ```bash
 # Create virtual environment
 python -m venv calculator-env
 
 # Activate virtual environment
-# On Windows:
+# Windows:
 calculator-env\Scripts\activate
-# On macOS/Linux:
+# macOS/Linux:
 source calculator-env/bin/activate
 
 # Install dependencies
-pip install customtkinter
+pip install -r requirements.txt
 
 # Run the application
 python Calculator_GUI.py
 ```
 
-## 🎮 Usage
+</details>
 
-### Basic Operations
-1. **Numbers**: Click number buttons (0-9) to input values
-2. **Operators**: Click operation buttons (+, −, ×, ÷) to perform calculations
-3. **Equals**: Press the blue equals button (=) to get results
-4. **Decimal**: Use the decimal point (.) for floating-point numbers
+<details>
+<summary><b>📦 Alternative Installation Methods</b></summary>
 
-### Advanced Functions
-- **Square**: Click `x²` to square the current number
-- **Square Root**: Click `²√x` to find the square root
-- **Reciprocal**: Click `¹∕ₓ` to get 1/x
-- **Percentage**: Click `%` to convert to percentage
-
-### Utility Operations
-- **Clear All**: `C` button clears everything and resets calculator
-- **Clear Entry**: `CE` button clears only the current input
-- **Backspace**: `⌫` button removes the last entered digit
-- **Plus/Minus**: `±` button toggles between positive and negative
-
-### Expression Display
-- The calculator shows the complete expression as you build it
-- Example: "25 + 7" is displayed while entering the second number
-- Results are shown clearly after pressing equals
-
-## 🛠️ Technical Details
-
-### Built With
-- **Python 3.x**: Core programming language
-- **CustomTkinter**: Modern UI framework for enhanced widgets
-- **Math Module**: For advanced mathematical operations
-
-### Project Structure
-```
-calculator-gui/
-│
-├── Calculator_GUI.py          # Main application file
-├── README.md                  # Project documentation
-├── screenshots/               # Application screenshots
-│   ├── calculator-main.png
-│   └── calculator-operations.png
-└── requirements.txt           # Python dependencies
-```
-
-### Key Components
-- **Calculator Class**: Main application logic and UI management
-- **Widget Creation**: Dynamic button generation with proper styling
-- **Event Handling**: Comprehensive input processing and calculation logic
-- **Display Management**: Real-time expression and result display
-
-## 🎨 Customization
-
-### Theme Modifications
-The calculator uses CustomTkinter's theming system. You can modify:
-- **Color scheme**: Change `ctk.set_default_color_theme("blue")` to other themes
-- **Appearance mode**: Switch between "dark" and "light" modes
-- **Button colors**: Customize individual button styling in the button creation loop
-
-### Adding New Functions
-To add new mathematical operations:
-1. Add the button to the `buttons` array in `create_widgets()`
-2. Create a new method for the operation logic
-3. Update button styling as needed
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Import Error: No module named 'customtkinter'**
+**Using requirements.txt:**
 ```bash
-pip install customtkinter
+pip install -r requirements.txt
 ```
 
-**Calculator window doesn't appear**
-- Ensure you're running Python 3.7+
-- Check if CustomTkinter is properly installed
-- Try running from command line to see error messages
+**Direct CustomTkinter installation:**
+```bash
+pip install customtkinter>=5.0.0
+```
 
-**Buttons not responding**
-- Restart the application
-- Check if window has focus
-- Verify Python environment is correctly set up
-
-### Error Handling
-The calculator includes built-in error handling for:
-- Division by zero operations
-- Invalid mathematical operations
-- Overflow conditions
-- Input validation errors
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Check the troubleshooting section above
-- Review the code comments for implementation details
-- Create an issue in the repository
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with basic calculator functionality
-- **v1.1.0** - Added advanced mathematical operations
-- **v1.2.0** - Implemented real-time expression display
-- **v1.3.0** - Enhanced UI with modern dark theme
+</details>
 
 ---
 
+## 🎮 Usage
+
+<div align="center">
+
+### 🎯 Quick Operation Guide
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🔢 **Basic Operations**
+
+| Action | Description |
+|--------|-------------|
+| `0-9` | Click number buttons to input values |
+| `+` `-` `×` `÷` | Perform arithmetic operations |
+| `=` | Calculate and display results |
+| `.` | Add decimal point for floating numbers |
+
+</td>
+<td width="50%">
+
+#### ⚡ **Advanced Functions**
+
+| Button | Function | Description |
+|--------|----------|-------------|
+| `x²` | Square | Square the current number |
+| `²√x` | Square Root | Find square root |
+| `¹∕ₓ` | Reciprocal | Calculate 1/x |
+| `%` | Percentage | Convert to percentage |
+
+</td>
+</tr>
+</table>
+
+### 🛠️ Utility Operations
+
+<div align="center">
+
+| Button | Action | Result |
+|:------:|:-------|:-------|
+| `C` | **Clear All** | Resets calculator completely |
+| `CE` | **Clear Entry** | Clears current input only |
+| `⌫` | **Backspace** | Removes last entered digit |
+| `±` | **Plus/Minus** | Toggles positive/negative |
+
+</div>
+
+> ### 💡 **Pro Tip: Expression Display**
+> 
+> The calculator shows your complete expression as you build it!
+> 
+> **Example:** When calculating `25 + 7`, you'll see:
+> - Enter `25` → Display: `25`
+> - Click `+` → Display: `25 +`
+> - Enter `7` → Display: `25 + 7`
+> - Click `=` → Display: `32`
+
+---
+
+## 🛠️ Technical Details
+
+<div align="center">
+
+### 🏗️ Built With
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![CustomTkinter](https://img.shields.io/badge/CustomTkinter-FF6B6B?style=for-the-badge&logo=tkinter&logoColor=white)](https://github.com/TomSchimansky/CustomTkinter)
+[![Math](https://img.shields.io/badge/Math%20Module-4CAF50?style=for-the-badge&logo=python&logoColor=white)](https://docs.python.org/3/library/math.html)
+
+</div>
+
+### 📁 Project Structure
+
+```
+📦 CodSoft_2/
+├── 📄 Calculator_GUI.py          # 🚀 Main application file
+├── 📄 README.md                  # 📖 Project documentation  
+├── 📄 requirements.txt           # 📋 Python dependencies
+├── 📁 screenshots/               # 📸 Application screenshots
+│   ├── 🖼️ calculator-main.png
+│   └── 🖼️ calculator-operations.png
+└── 📄 LICENSE                    # ⚖️ MIT License
+```
+
+<details>
+<summary><b>🏛️ Architecture Overview</b></summary>
+
+| Component | Description | Responsibility |
+|-----------|-------------|----------------|
+| **Calculator Class** | 🧠 Core application logic | UI management and state handling |
+| **Widget Creation** | 🎨 Dynamic UI generation | Button styling and layout management |
+| **Event Handling** | ⚡ User interaction processing | Input validation and calculation logic |
+| **Display Management** | 📺 Real-time updates | Expression and result visualization |
+
+</details>
+
+---
+
+## 🎨 Customization
+
+<details>
+<summary><b>🎨 Theme Modifications</b></summary>
+
+The calculator uses CustomTkinter's powerful theming system:
+
+```python
+# Change color theme
+ctk.set_default_color_theme("blue")    # Options: "blue", "green", "dark-blue"
+
+# Switch appearance mode  
+ctk.set_appearance_mode("dark")        # Options: "dark", "light", "system"
+```
+
+**Available Themes:**
+- 🔵 **Blue** (Default) - Professional and modern
+- 🟢 **Green** - Nature-inspired palette  
+- 🔷 **Dark Blue** - Deep, sophisticated look
+
+</details>
+
+<details>
+<summary><b>⚙️ Adding Custom Functions</b></summary>
+
+To extend the calculator with new operations:
+
+1. **Add button to layout:**
+   ```python
+   # In create_widgets() method
+   ("new_op", self.custom_function)
+   ```
+
+2. **Implement the function:**
+   ```python
+   def custom_function(self):
+       try:
+           # Your custom logic here
+           result = your_calculation(float(self.current))
+           self.current = str(result)
+           self.update_display(self.current)
+       except:
+           self.update_display("Error")
+   ```
+
+3. **Style the button:**
+   ```python
+   # Add styling logic in button creation loop
+   elif text in ["new_op"]:
+       fg_color = "your_color"
+   ```
+
+</details>
+
+---
+
+## 🐛 Troubleshooting
+
+<details>
+<summary><b>❌ Common Issues & Solutions</b></summary>
+
+### Import Error: No module named 'customtkinter'
+
+```bash
+# Solution 1: Install CustomTkinter
+pip install customtkinter
+
+# Solution 2: Upgrade pip and retry
+python -m pip install --upgrade pip
+pip install customtkinter
+```
+
+### Calculator window doesn't appear
+
+- ✅ **Check Python version**: Ensure you're running Python 3.7+
+- ✅ **Verify installation**: `pip list | grep customtkinter`
+- ✅ **Run from terminal**: Check for error messages
+- ✅ **System compatibility**: Ensure GUI support is available
+
+### Buttons not responding
+
+- 🔄 **Restart application**: Close and reopen the calculator
+- 🎯 **Check window focus**: Click on the calculator window
+- 🐍 **Verify environment**: Ensure Python environment is correctly set up
+- 💻 **System resources**: Check if system has sufficient memory
+
+</details>
+
+<div align="center">
+
+### 🛡️ Built-in Error Handling
+
+| Error Type | Handling | User Experience |
+|------------|----------|-----------------|
+| **Division by Zero** | ⚠️ Displays warning message | `"Cannot divide by zero"` |
+| **Invalid Operations** | 🚫 Graceful error recovery | `"Error"` with reset |
+| **Overflow Conditions** | 📊 Automatic formatting | Scientific notation when needed |
+| **Input Validation** | ✅ Real-time checking | Prevents invalid characters |
+
+</div>
+
+---
+
+## 📄 License
+
+<div align="center">
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
+
+---
+
+## 🤝 Contributing
+
+<div align="center">
+
+**Contributions are welcome!** 🎉
+
+[![GitHub Issues](https://img.shields.io/github/issues/ShubhieSingh/CodSoft_2?style=for-the-badge)](https://github.com/ShubhieSingh/CodSoft_2/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ShubhieSingh/CodSoft_2?style=for-the-badge)](https://github.com/ShubhieSingh/CodSoft_2/pulls)
+
+</div>
+
+### 🚀 How to Contribute
+
+1. **🍴 Fork the repository**
+   ```bash
+   git clone https://github.com/ShubhieSingh/CodSoft_2.git
+   ```
+
+2. **🌿 Create a feature branch**
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+
+3. **💾 Commit your changes**
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+
+4. **🚀 Push to the branch**
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+
+5. **📝 Open a Pull Request**
+
+<div align="center">
+
+### 🎯 Contribution Guidelines
+
+| Type | Description | Example |
+|------|-------------|---------|
+| 🐛 **Bug Fix** | Fix existing issues | Resolve calculation errors |
+| ⚡ **Feature** | Add new functionality | Scientific calculator mode |
+| 📚 **Documentation** | Improve docs | Update README, add comments |
+| 🎨 **Style** | UI/UX improvements | Better themes, animations |
+
+</div>
+
+---
+
+<div align="center">
+
+### 🌟 Show Your Support
+
+If this project helped you, please consider giving it a ⭐ on [GitHub](https://github.com/ShubhieSingh/CodSoft_2)!
+
 **Made with ❤️ using Python and CustomTkinter**
+
+[![GitHub stars](https://img.shields.io/github/stars/ShubhieSingh/CodSoft_2?style=social)](https://github.com/ShubhieSingh/CodSoft_2/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ShubhieSingh/CodSoft_2?style=social)](https://github.com/ShubhieSingh/CodSoft_2/network/members)
+
+</div>
